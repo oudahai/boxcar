@@ -1,0 +1,29 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"src/tab1.html",
+			"imges/u2600.png"
+		],
+		"refer": [
+			"src/tab1.html",
+			"src/tab3.html",
+			"src/tab4.html",
+			"src/tab2.html"
+		]
+	},
+	"src/tab1.html": {
+		"resources": [
+			"imges/b2.png",
+			"imges/b3.png",
+			"imges/b1.png",
+			"imges/b4.png",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"imges/wzui_comment_collapsed.png",
+			"css/tab1.css"
+		]
+	}
+}

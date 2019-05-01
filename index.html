@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab" id="navFooter">
+    <a class="mui-tab-item mui-active" id="tab1" href="src/tab1.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item"  id="tab2" href="src/tab2.html">
+        <span class="mui-icon mui-icon-refresh"></span>
+        <span class="mui-tab-label">服务</span>
+    </a>
+    <span class="mui-tab-item">
+    	<img src="imges/u2600.png" alt="" />
+    </span>
+    <a class="mui-tab-item"  id="tab3" href="src/tab3.html">
+        <span class="mui-icon mui-icon-pengyouquan"></span>
+        <span class="mui-tab-label">互动</span>
+    </a>
+     <a class="mui-tab-item"  id="tab4" href="src/tab4.html">
+        <span class="mui-icon mui-icon-contact"></span>
+        <span class="mui-tab-label">我的</span>
+    </a>
+ </nav>
+ <script type="text/javascript">
+var subpages=['src/tab1.html','src/tab2.html','src/tab3.html','src/tab4.html'];  //以数组方式设置页面id
+var subpageStyle={              //设置主页面打开的样式(设置顶部和底部，留空间给中间部分显示出来，放sub1.html这些页面)
+   top:'0px',            //标题栏的高度，更多详细参数查看http://dev.dcloud.net.cn/mui/ui/#mask
+   bottom:'50px'        //底部选项卡的高度
+};
+mui.plusReady(function(){
+   var self=plus.webview.currentWebview();   //创建子窗体
+   for(var i=0;i<subpages.length;i++){
+      var sub=plus.webview.create(subpages[i],subpages[i],subpageStyle); //当前Webview的URL地址、ID、样式。功能：创建子窗体
+      sub.hide(); //功能：隐藏页面
+      self.append(sub);      //功能： 追加子页面,首个选项卡页面显示，其它均隐藏
+   } 
+   plus.webview.show(subpages[0]);  //设置主页的sub.html默认显示出来，其他sub2.html默认隐藏
+})
+ mui("#navFooter").on("tap","a",function(e){ //通过.mui-bar-tap里的a元素绑定tap事件，达到批量绑定的效果
+   var tagPage=this.getAttribute("href");//getAttribute()获取属性函数
+   plus.webview.show(tagPage,"fade-in",50)  //fade-in淡入，100毫秒
+ }) 
+
+</script>
+</body>
+</html>
