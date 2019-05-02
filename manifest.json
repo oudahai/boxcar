@@ -292,7 +292,9 @@
 			"src/tab_min/tab31_min.html": {
 				"resources": [
 					"js/mui.min.js",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"imges/fennen.png"
 				],
 				"refer": [],
 				"priority": 0
