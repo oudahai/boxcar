@@ -75,5 +75,26 @@
 			"imges/ahlib_empty_icon_sigh.png",
 			"fonts/mui.ttf"
 		]
+	},
+	"src/tab3.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"imges/ahlib_userpic_default.png",
+			"imges/rc_ic_def_coversation_portrait.png",
+			"src/tab_min/tab31_min.html",
+			"js/jquery-1.11.1.js"
+		],
+		"refer": [
+			"src/tab_min/tab31_min.html",
+			"src/tab_min/tab32_min.html"
+		]
+	},
+	"src/tab_min/tab31_min.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
 	}
 }
