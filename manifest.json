@@ -216,7 +216,20 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"imges/wzui_comment_collapsed.png",
-					"css/tab1.css"
+					"css/tab1.css",
+					"imges/ahlib_smiley_49.png",
+					"imges/tian.jpg",
+					"imges/ahlib_smiley_44.png",
+					"imges/ahlib_smiley_45.png",
+					"imges/ahlib_smiley_46.png",
+					"imges/ahlib_smiley_51.png",
+					"imges/ahlib_smiley_50.png",
+					"imges/ahlib_smiley_47.png",
+					"imges/ahlib_smiley_48.png",
+					"imges/rc_ic_setting_friends_add.png",
+					"fonts/mui.ttf",
+					"imges/car_8_p.png",
+					"imges/car_9.png"
 				],
 				"refer": [],
 				"priority": 0

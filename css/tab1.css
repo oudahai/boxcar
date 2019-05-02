@@ -45,3 +45,54 @@
 	top: 8px;
 	right: 2px;
 }
+/*图标和文字*/
+.main{
+	/*background-color: red;*/
+	text-align: center;
+}
+.tianqi{
+	width: 95%;
+	/*height: 100px;*/
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.tianqiTop{
+	display: flex;
+	justify-content:space-between;
+	/*background: orange;*/
+}
+.tianqiTop>div{
+	width: 120px;
+	height: 40px;
+	/*background-color: yellow;*/
+	padding:5px;
+}
+.tianqiTop>div:nth-child(1)>img{
+	float: left;
+	margin-right: 5px;
+}
+.tianqiTop p{
+	margin: 4px;
+}
+.tianqiTop>div:nth-child(2) p{
+	margin-left: 45px;
+}
+/*添加爱车*/
+.tianMin{
+	text-align: center;
+}
+.tianMin>img{
+	width: 55px;
+	
+}
+/*导航条列表*/
+.nav_line{
+	
+	border-bottom: 1px solid #ccc;
+	
+}
+.news>p{
+	margin-top: 15px;
+}
+
