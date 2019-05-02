@@ -66,5 +66,14 @@
 			"fonts/mui.ttf",
 			"imges/pull_refresh_frame_15.png"
 		]
+	},
+	"src/tab4.html": {
+		"resources": [
+			"imges/car.png",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"imges/ahlib_empty_icon_sigh.png",
+			"fonts/mui.ttf"
+		]
 	}
 }
