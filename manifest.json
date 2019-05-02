@@ -269,7 +269,14 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"imges/ahlib_empty_icon_sigh.png",
-					"fonts/mui.ttf"
+					"fonts/mui.ttf",
+					"imges/user_myorder.png",
+					"imges/user_mycoupon.png",
+					"imges/user_mydraft.png",
+					"imges/my_wallet_icon.png",
+					"imges/my_garage.png",
+					"imges/user_uchuang.png",
+					"imges/about_indicator.png"
 				],
 				"refer": [],
 				"priority": 0
@@ -294,7 +301,17 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"fonts/mui.ttf",
-					"imges/fennen.png"
+					"imges/fennen.png",
+					"js/scrolltext.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"src/tab_min/tab32_min.html": {
+				"resources": [
+					"imges/publish_star_full.png",
+					"imges/publish_star.png",
+					"imges/user_default_woman.png"
 				],
 				"refer": [],
 				"priority": 0
