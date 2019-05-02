@@ -38,5 +38,31 @@
 			"imges/car_8_p.png",
 			"imges/car_9.png"
 		]
+	},
+	"src/tab2.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"src/tab_min/tab2_min.html"
+		],
+		"refer": [
+			"src/tab_min/tab2_min.html"
+		]
+	},
+	"src/tab_min/tab2_min.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"imges/ahlib_smiley_49.png",
+			"imges/ahlib_smiley_50.png",
+			"imges/ahlib_smiley_47.png",
+			"imges/ahlib_smiley_45.png",
+			"imges/ahlib_smiley_44.png",
+			"imges/ahlib_smiley_46.png",
+			"imges/ahlib_smiley_48.png",
+			"imges/ahlib_smiley_51.png",
+			"js/shijian.js",
+			"js/jquery-1.11.1.js"
+		]
 	}
 }
