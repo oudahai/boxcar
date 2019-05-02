@@ -8,15 +8,13 @@
 		<link href="../../css/mui.min.css" rel="stylesheet" />
 		<style type="text/css">
 			.timelinit{
-				height: 50px;
+				/*height: 50px;*/
 				display: flex;
 				justify-content: space-between;
 				/*background: pink;*/
 			}
 			.timelinit>div{
 			 width: 130px;
-			 /*height: 50px;*/
-			 background: yellow;	
 			}
 			.timelinit>div:nth-child(1){
 				padding: 5px;
@@ -38,6 +36,43 @@
 			.timelinit>div:nth-child(2)>div>b{
 				margin-top: 5px;
 			}
+			/*商品详情页*/
+		    .commofity{
+		    	height: 200px;
+		    	/*background: yellow;*/
+		    	text-align: center;
+		    }
+		   .commofity img{
+		   	margin: 5px;
+		   }
+		  .commofity p{
+		  	text-align: left;
+		  	margin-left: 10px;
+		  	line-height: 14px;
+		  }
+		  .commofity p b{
+		  	display: inline-block;
+             width: 22px;
+		  }
+			/*头标定位*/
+			.commofity>div>div{
+				position: relative;
+			}
+			.healabel{
+				position: absolute;
+				width: 45px;
+				height: 25px;
+				padding-top: 2px;
+				background-color:#EC971F;
+				top:0;
+				left: 10px;
+				border-top-right-radius: 15px;    /*目标元素右上角为4px的圆角*/
+				border-bottom-right-radius: 15px;    /*目标元素左上角为4px的圆角*/
+			}
+			.healabel>span{
+				color: #fff;
+				font-size: 13px;
+			}
 		</style>
 	</head>
      
@@ -48,7 +83,7 @@
 		<script type="text/javascript">
 			mui.init()
 		</script>
-<div class="mui-content" id="tab2_min">
+<div class="mui-content" id="tab2_min" style="background-color: #fff;">
    <div class="main" style="text-align: center;">
 		<div class="mui-row">
 	        <div class="mui-col-sm-3 mui-col-xs-3">
@@ -100,9 +135,90 @@
 			</div>
 		</div>
 	</div>
-	<div class="commofity">
-		
+	<div class="mui-content" style="background: #fff;">
+		<div class="commofity">
+			<div class="mui-row">
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		        	<div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		            <div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+           </div>
+		</div>
+		<div class="commofity">
+			<div class="mui-row">
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		        	<div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		            <div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+           </div>
+		</div>
+		<!--第三层-->
+		<div class="commofity">
+			<div class="mui-row">
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		        	<div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		            <div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+           </div>
+		</div>
+		<div class="commofity">
+			<div class="mui-row">
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		        	<div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		            <div class="healabel">
+		        		<span>2.4折</span>
+		        	</div>
+		           <img src="../../imges/pull_refresh_frame_15.png" alt="" /> 
+		          <p>家车两用四合一吸尘器...</p>
+		          <p><span style="color: red;">108.00元</span><b></b><del>458.00元</del></p>
+		        </div>
+           </div>
+		</div>
 	</div>
+	
 </div>
 	</body>
 

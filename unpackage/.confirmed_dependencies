@@ -62,7 +62,9 @@
 			"imges/ahlib_smiley_48.png",
 			"imges/ahlib_smiley_51.png",
 			"js/shijian.js",
-			"js/jquery-1.11.1.js"
+			"js/jquery-1.11.1.js",
+			"fonts/mui.ttf",
+			"imges/pull_refresh_frame_15.png"
 		]
 	}
 }
