@@ -25,9 +25,11 @@
 				height: 200px;
 				margin: 5px;
 			}
-			#sliderSegmentedControl a{
+			#sliderSegmentedControl>.mui-scroll>a{
 				margin: 2px;
 			    padding: 0;
+			    position: relative;
+			    background-color: red;
 			}
 			#sliderSegmentedControl img{
 				width: 100px;
@@ -37,6 +39,58 @@
 				height: 190px;
 				
 			}
+			/*滚动文字*/
+ /*公告*/
+ #jsfoot01{
+ 	padding: 0;
+ 	
+ }
+  #jsfoot01>li{
+  	
+  }
+ .notice {
+ 	/*width: 150px;*/
+ 	/*margin: 5px 0 0 0;*/
+ 	height: 44px;
+ 	position: absolute;
+ 	top:100px;
+ 	left: 0px;
+ 	z-index: 10;
+ 	/*background: yellow;*/
+ 	/*overflow: hidden;*/
+ 	/*background:url(../img/eb1d8a588e4faac40da5c8d464cf10bd_bg.gif) no-repeat;
+ 	background-size:100% ;*/
+ 	/*background: white;*/
+ }
+ 
+ .noticTipTxt {
+ 	color: #ff7300;
+ 	/*width: 100%;*/
+ 	height: 20px;
+ 	line-height: 22px;
+ 	overflow: hidden;
+ 	text-align: left;
+ 	/*margin: 10px;*/
+ 	/*background: orange;*/
+ }
+ 
+ .noticTipTxt li {
+ 	list-style: none;
+ 	height: 22px;
+ 	
+ 	line-height: 22px;
+ }
+ 
+ .noticTipTxt a {
+ 	color: #fff;
+ 	font-size: 10px;
+ 	text-decoration: none;
+ }
+ 
+ .noticTipTxt a:hover {
+ 	color: #ff7300;
+ 	text-decoration: underline;
+ }
 		</style>
 	</head>
 
@@ -61,6 +115,22 @@
 										<div class="mui-scroll">
 											<a class="mui-control-item" href="#item1mobile">
 												<img src="../../imges/fennen.png" />
+												<div class="notice">
+													<ul id="jsfoot01" class="noticTipTxt">
+														<li>
+															<a href="" target="_blank">平台简介 </a>
+														</li>
+														<li>
+															<a href="" target="_blank">积分使用规则</a>
+														</li>
+														<li>
+															<a href="" target="_blank">不支持积分的产品通知</a>
+														</li>
+														<li>
+															<a href="" target="_blank">个别商品兑换比例</a>
+														</li>
+													</ul>
+												</div>
 											</a>
 											<a class="mui-control-item" href="#item2mobile">
 												<img src="../../imges/fennen.png" />
@@ -107,6 +177,7 @@
 										<div class="mui-scroll">
 											<a class="mui-control-item" href="#item1mobile">
 												<img src="../../imges/fennen.png" />
+												
 											</a>
 											<a class="mui-control-item" href="#item2mobile">
 												<img src="../../imges/fennen.png" />
@@ -147,10 +218,10 @@
 						    			<p>更多<span class="mui-icon mui-icon-arrowthinright"></span></p>
 						    		</div>
 						    	</div>
-			            <div class="nav_line" >
-			           		<div id="slider" class="mui-slider" >
+			    <div class="nav_line" >
+			           <div id="slider" class="mui-slider" >
 								<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-										<div class="mui-scroll">
+									<div class="mui-scroll">
 											<a class="mui-control-item" href="#item1mobile">
 												<img src="../../imges/fennen.png" />
 											</a>
@@ -178,12 +249,44 @@
 											<a class="mui-control-item" href="#item2mobile">
 												<img src="../../imges/fennen.png" />
 											</a>
-								  		</div>
+								  	</div>
 							    </div>
-			                </div>
 			            </div>
-                  </div>
+			   </div>
+         </div>
 </div>
+<script src="../../js/scrolltext.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+mui.init({
+			swipeBack: true //启用右滑关闭功能
+	});
+	if(document.getElementById("jsfoot01")) {
+				var scrollup = new ScrollText("jsfoot01");
+				scrollup.LineHeight = 22; //单排文字滚动的高度
+				scrollup.Amount = 1; //注意:子模块(LineHeight)一定要能整除Amount.
+				scrollup.Delay = 20; //延时
+				scrollup.Start(); //文字自动滚动
+				scrollup.Direction = "down"; //文字向下滚动
+			}
+</script>
+<!--公告-->
+			<!--<div class="notice">
+				<ul id="jsfoot01" class="noticTipTxt a" htmlName="./Home_lib/Home_news/Home_news.html">
+					<li>
+						<a href="" target="_blank">平台简介 <img src="../img/631819b7b71627864db56e1ca0984463_hot001.gif" width="22" height="11" /></a>
+					</li>
+					<li>
+						<a href="" target="_blank">积分使用规则<img src="../img/631819b7b71627864db56e1ca0984463_hot001.gif" width="22" height="11" /></a>
+					</li>
+					<li>
+						<a href="" target="_blank">不支持积分的产品通知<img src="../img/631819b7b71627864db56e1ca0984463_hot001.gif" width="22" height="11" /></a>
+					</li>
+					<li>
+						<a href="" target="_blank">个别商品兑换比例<img src="../img/631819b7b71627864db56e1ca0984463_hot001.gif" width="22" height="11" /></a>
+					</li>
+				</ul>
+			</div>-->
+			<!--公告结束-->
 	</body>
 
 </html>
