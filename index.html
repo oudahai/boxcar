@@ -3,12 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
-    <script src="js/mui.min.js"></script>
+    <title>首页</title>
     <link href="css/mui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
     <style type="text/css">
     	#navFooter{
     		background-color: #fff;
@@ -17,28 +13,33 @@
 </head>
 <body>
 	<nav class="mui-bar mui-bar-tab" id="navFooter">
-    <a class="mui-tab-item mui-active" id="tab1" href="src/tab1.html">
+    <a class="mui-tab-item mui-active" id="tab1" href="src/home.html">
         <span class="mui-icon mui-icon-home"></span>
         <span class="mui-tab-label">首页</span>
     </a>
-    <a class="mui-tab-item"  id="tab2" href="src/tab2.html">
+    <a class="mui-tab-item" id="tab2" href="src/serve.html">
         <span class="mui-icon mui-icon-refresh"></span>
         <span class="mui-tab-label">服务</span>
     </a>
     <span class="mui-tab-item">
     	<img src="imges/u2600.png" alt="" />
     </span>
-    <a class="mui-tab-item"  id="tab3" href="src/tab3.html">
+    <a class="mui-tab-item"  id="tab3" href="src/each.html">
         <span class="mui-icon mui-icon-pengyouquan"></span>
         <span class="mui-tab-label">互动</span>
     </a>
-     <a class="mui-tab-item"  id="tab4" href="src/tab4.html">
+     <a class="mui-tab-item"  id="tab4" href="src/myself.html">
         <span class="mui-icon mui-icon-contact"></span>
         <span class="mui-tab-label">我的</span>
     </a>
  </nav>
+
+ <script src="js/mui.min.js"></script>
+ <script type="text/javascript" charset="utf-8">
+      	mui.init();
+</script>
  <script type="text/javascript">
-var subpages=['src/tab1.html','src/tab2.html','src/tab3.html','src/tab4.html'];  //以数组方式设置页面id
+var subpages=['src/home.html','src/serve.html','src/each.html','src/myself.html'];  //以数组方式设置页面id
 var subpageStyle={              //设置主页面打开的样式(设置顶部和底部，留空间给中间部分显示出来，放sub1.html这些页面)
    top:'0px',            //标题栏的高度，更多详细参数查看http://dev.dcloud.net.cn/mui/ui/#mask
    bottom:'50px'        //底部选项卡的高度

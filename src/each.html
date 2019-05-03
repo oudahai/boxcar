@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/each.css" />
+	</head>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+				mui.init();
+		</script>
+		<header>
+			<div>
+				<div class="topleft">
+				<img src="../imges/ahlib_userpic_default.png" alt="" />
+			   </div>
+		    	<nav id="zhaofriend">
+		    		<a href="tab_min/each31_min.html" id="tab31_min">
+			    	<span>发现</span>
+			    	  <label></label>
+		    	    </a>
+		    	    <a href="tab_min/each32_min.html">
+		    	    	<span>好友</span>
+		    	    	<label></label>
+		    	    </a>
+		    	</nav>
+		    	<div class="topright">
+				<img src="../imges/rc_ic_def_coversation_portrait.png" alt="" />
+			    </div>
+			</div>
+		</header>
+<script src="../js/jquery-1.11.1.js"></script>	
+<script type="text/javascript">
+var subpages=['tab_min/each31_min.html','tab_min/each32_min.html'];  //以数组方式设置页面id
+var subpageStyle={              //设置主页面打开的样式(设置顶部和底部，留空间给中间部分显示出来，放sub1.html这些页面)
+   top:'45px',            //标题栏的高度，更多详细参数查看http://dev.dcloud.net.cn/mui/ui/#mask
+   bottom:'0px'        //底部选项卡的高度
+};
+mui.plusReady(function(){
+   var self=plus.webview.currentWebview();   //创建子窗体
+   for(var i=0;i<subpages.length;i++){
+      var sub=plus.webview.create(subpages[i],subpages[i],subpageStyle); //当前Webview的URL地址、ID、样式。功能：创建子窗体
+      sub.hide(); //功能：隐藏页面
+      self.append(sub);      //功能： 追加子页面,首个选项卡页面显示，其它均隐藏
+   } 
+   plus.webview.show(subpages[0]);  //设置主页的sub.html默认显示出来，其他sub2.html默认隐藏
+})
+ mui("#zhaofriend").on("tap","a",function(e){ //通过.mui-bar-tap里的a元素绑定tap事件，达到批量绑定的效果
+   var tagPage=this.getAttribute("href");//getAttribute()获取属性函数
+   /*导航条样式切换*/
+   $(this).css('color','red');
+   $(this).css('font-size','20px');
+   $(this).children('label').css('display','block');
+   $(this).siblings().css('color','#000');
+    $(this).siblings().css('font-size','15px');
+   $(this).siblings().children('label').css('display','none');
+   plus.webview.show(tagPage,"fade-in",1000)  //fade-in淡入，100毫秒
+ }) 
+
+</script>
+	</body>
+
+</html>

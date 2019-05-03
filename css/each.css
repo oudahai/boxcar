@@ -1,0 +1,46 @@
+header>div{
+				width: 100%;
+				text-align: center;
+				background-color: #fff;
+				position: relative;
+				padding-top: 12px;
+			}
+			#zhaofriend{
+				height: 45px;
+			}
+			#zhaofriend>a{
+				margin: 0 10px;
+				color: #000;
+				position: relative;
+			}
+			/*导航条右边*/
+			.topleft{
+				position: absolute;
+				top:12px;
+				left: 10px;
+			}
+			.topright{
+			   position: absolute;
+				top:12px;
+				right: 10px;	
+			}
+			.topleft>img,.topright>img{
+				width: 20px;
+			}
+			/*发现，好友下面点点*/
+			label{
+				position: absolute;
+				bottom: -8px;
+				left: 10px;
+				width: 15px;
+				height: 2px;
+				background-color: #007AFF;
+				display: none;
+			}
+			#tab31_min{
+				font-size: 20px;
+				color: red;
+			}
+			#tab31_min>label{
+				display: block;
+			}

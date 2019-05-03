@@ -1,0 +1,66 @@
+	.timelinit{
+				/*height: 50px;*/
+				display: flex;
+				justify-content: space-between;
+				/*background: pink;*/
+			}
+			.timelinit>div{
+			 width: 130px;
+			}
+			.timelinit>div:nth-child(1){
+				padding: 5px;
+			}
+			.timelinit>div:nth-child(2)>div{
+			display: flex;	
+			/*background: pink;*/
+			width: 100%;
+			justify-content: center;
+			}
+			.timelinit>div:nth-child(2)>div>span{
+				margin: 5px;
+				width: 22px;
+				height: 22px;
+				background-color: #000;
+				color: #fff;
+				text-align: center;
+			}
+			.timelinit>div:nth-child(2)>div>b{
+				margin-top: 5px;
+			}
+			/*商品详情页*/
+		    .commofity{
+		    	height: 200px;
+		    	/*background: yellow;*/
+		    	text-align: center;
+		    }
+		   .commofity img{
+		   	margin: 5px;
+		   }
+		  .commofity p{
+		  	text-align: left;
+		  	margin-left: 10px;
+		  	line-height: 14px;
+		  }
+		  .commofity p b{
+		  	display: inline-block;
+             width: 22px;
+		  }
+			/*头标定位*/
+			.commofity>div>div{
+				position: relative;
+			}
+			.healabel{
+				position: absolute;
+				width: 45px;
+				height: 25px;
+				padding-top: 2px;
+				background-color:#EC971F;
+				top:0;
+				left: 10px;
+				border-top-right-radius: 15px;    /*目标元素右上角为4px的圆角*/
+				border-bottom-right-radius: 15px;    /*目标元素左上角为4px的圆角*/
+			}
+			.healabel>span{
+				color: #fff;
+				font-size: 13px;
+			}

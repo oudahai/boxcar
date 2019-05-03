@@ -198,12 +198,16 @@
 					"fonts/mui.ttf",
 					"css/mui.min.css",
 					"src/tab1.html",
-					"imges/u2600.png"
+					"imges/u2600.png",
+					"src/home.html"
 				],
 				"refer": [
 					"src/tab3.html",
 					"src/tab4.html",
-					"src/tab2.html"
+					"src/tab2.html",
+					"src/serve.html",
+					"src/each.html",
+					"src/myself.html"
 				],
 				"priority": 0
 			},
@@ -316,7 +320,8 @@
 				"resources": [
 					"imges/publish_star_full.png",
 					"imges/publish_star.png",
-					"imges/user_default_woman.png"
+					"imges/user_default_woman.png",
+					"imges/pull_refresh_frame_15.png"
 				],
 				"refer": [],
 				"priority": 0
@@ -337,6 +342,116 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"src/each.html": {
+				"resources": [
+					"src/tab_min/tab31_min.html",
+					"imges/rc_ic_def_coversation_portrait.png",
+					"imges/ahlib_userpic_default.png",
+					"js/mui.min.js",
+					"js/jquery-1.11.1.js",
+					"css/mui.min.css",
+					"css/each.css"
+				],
+				"refer": [
+					"src/tab_min/tab32_min.html",
+					"src/tab_min/each31_min.html",
+					"src/tab_min/each32_min.html"
+				],
+				"priority": 0
+			},
+			"src/home.html": {
+				"resources": [
+					"imges/b2.png",
+					"imges/ahlib_smiley_49.png",
+					"imges/wzui_comment_collapsed.png",
+					"css/tab1.css",
+					"imges/tian.jpg",
+					"imges/ahlib_smiley_44.png",
+					"imges/ahlib_smiley_45.png",
+					"imges/ahlib_smiley_46.png",
+					"imges/b1.png",
+					"imges/ahlib_smiley_51.png",
+					"imges/ahlib_smiley_50.png",
+					"imges/ahlib_smiley_47.png",
+					"imges/b3.png",
+					"imges/ahlib_smiley_48.png",
+					"imges/b4.png",
+					"imges/car_8_p.png",
+					"imges/car_9.png",
+					"js/jquery-1.11.1.js",
+					"js/Jump.js",
+					"imges/rc_ic_setting_friends_add.png"
+				],
+				"refer": [
+					"src/newpage/lovecar.html",
+					"src/newpage/search.html"
+				],
+				"priority": 0
+			},
+			"src/serve.html": {
+				"resources": [
+					"src/tab_min/tab2_min.html",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"src/tab_min/serve_min.html"
+				],
+				"priority": 0
+			},
+			"src/myself.html": {
+				"resources": [
+					"imges/user_myorder.png",
+					"imges/user_mycoupon.png",
+					"imges/user_mydraft.png",
+					"imges/my_wallet_icon.png",
+					"imges/my_garage.png",
+					"imges/user_uchuang.png",
+					"imges/car.png",
+					"imges/about_indicator.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"src/tab_min/serve_min.html": {
+				"resources": [
+					"imges/pull_refresh_frame_15.png",
+					"js/shijian.js",
+					"imges/ahlib_smiley_49.png",
+					"imges/ahlib_smiley_44.png",
+					"imges/ahlib_smiley_45.png",
+					"js/jquery-1.11.1.js",
+					"imges/ahlib_smiley_46.png",
+					"imges/ahlib_smiley_51.png",
+					"imges/ahlib_smiley_50.png",
+					"imges/ahlib_smiley_47.png",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"imges/ahlib_smiley_48.png",
+					"css/serve_min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"src/tab_min/each31_min.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"js/scrolltext.js",
+					"imges/fennen.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"src/tab_min/each32_min.html": {
+				"resources": [
+					"imges/publish_star_full.png",
+					"imges/publish_star.png",
+					"imges/user_default_woman.png",
+					"imges/pull_refresh_frame_15.png"
 				],
 				"refer": [],
 				"priority": 0
