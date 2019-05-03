@@ -7,22 +7,9 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/tab1.css" />
-		<style type="text/css">
-			.aaa{
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 10;
-			}
-		</style>
 	</head>
-
 	<body>
-		<script src="../js/mui.min.js"></script>
-		<script type="text/javascript">
-			mui.init();
-		</script>
-				    <div id="slider" class="mui-slider" >
+		  <div id="slider" class="mui-slider" >
 							  <div class="mui-slider-group mui-slider-loop">
 							    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
 							    <div class="mui-slider-item mui-slider-item-duplicate">
@@ -124,7 +111,7 @@
 					    	    	<p>14/18^C</p>
 					    	    </div>
 					    	</div>
-					    	<div class="tianMin">
+					    	<div class="tianMin a" htmlName="newpage/lovecar.html">
 					    		<img src="../imges/rc_ic_setting_friends_add.png"  />
 					    		<p>添加爱车，更懂它</p>
 					    	</div>
@@ -200,16 +187,17 @@
                 </div>
 <script src="../js/mui.min.js"></script>
 <script src="../js/jquery-1.11.1.js" ></script>
+<!--Jump为跳转模块-->
+<script  src="../js/Jump.js"></script>
 <script type="text/javascript" charset="utf-8">
 			mui.init({
 swipeBack: true //启用右滑关闭功能
 			});
 				//轮播滚动
-				var slider=mui(".mui-slider");
-				slider.slider({
-					interval: 0
-				});
-				
+			var slider=mui(".mui-slider");
+			slider.slider({
+				interval: 1000
+			});	
 </script>
 <!--滚动置顶-->
 <script type="text/javascript">  

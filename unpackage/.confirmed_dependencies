@@ -37,7 +37,11 @@
 			"fonts/mui.ttf",
 			"imges/car_8_p.png",
 			"imges/car_9.png",
-			"js/jquery-1.11.1.js"
+			"js/jquery-1.11.1.js",
+			"js/Jump.js"
+		],
+		"refer": [
+			"src/newpage/lovecar.html"
 		]
 	},
 	"src/tab2.html": {
@@ -113,6 +117,15 @@
 			"imges/publish_star_full.png",
 			"imges/publish_star.png",
 			"imges/user_default_woman.png"
+		]
+	},
+	"src/newpage/lovecar.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"css/lovercar.css",
+			"js/jquery-1.11.1.js"
 		]
 	}
 }
