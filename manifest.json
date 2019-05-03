@@ -234,7 +234,8 @@
 					"js/Jump.js"
 				],
 				"refer": [
-					"src/newpage/lovecar.html"
+					"src/newpage/lovecar.html",
+					"src/newpage/search.html"
 				],
 				"priority": 0
 			},
@@ -327,6 +328,15 @@
 					"fonts/mui.ttf",
 					"css/lovercar.css",
 					"js/jquery-1.11.1.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"src/newpage/search.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
