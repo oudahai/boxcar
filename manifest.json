@@ -229,7 +229,8 @@
 					"imges/rc_ic_setting_friends_add.png",
 					"fonts/mui.ttf",
 					"imges/car_8_p.png",
-					"imges/car_9.png"
+					"imges/car_9.png",
+					"js/jquery-1.11.1.js"
 				],
 				"refer": [],
 				"priority": 0

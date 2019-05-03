@@ -7,6 +7,14 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/tab1.css" />
+		<style type="text/css">
+			.aaa{
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 10;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -54,7 +62,7 @@
 							    </div>
 							  </div>
 						</div>
-			 <div class="charge_min">
+			 <div class="charge_min" style="background:#fff;" id="charge_min">
 			 	   <div>
 						<a href="#">贵阳
 						 <img src="../imges/wzui_comment_collapsed.png"/>
@@ -66,7 +74,7 @@
 				        <input type="text" class="mui-input-clear" placeholder="输入您要查询的内容/门槛">
 		                <i><span class="mui-icon mui-icon-mic"></span></i>
 					</div>
-		 		</div>  
+		 	</div>  
                 <div class="mui-content" style="background: #fff;">
 					<div class="main">
 						<div class="mui-row">
@@ -179,9 +187,19 @@
 					               </div>
 					           </a>
 					       </li>
+					        <li class="mui-table-view-cell mui-media">
+					           <a href="javascript:;">
+					               <img class="mui-media-object mui-pull-right" src="../imges/car_9.png">
+					               <div class="mui-media-body news">
+					                    超实用奥兰多提车作业
+					                   <p class="mui-ellipsis">幽深的雨夜/15赞</p>
+					               </div>
+					           </a>
+					       </li>
 					   </ul>
                 </div>
 <script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.11.1.js" ></script>
 <script type="text/javascript" charset="utf-8">
 			mui.init({
 swipeBack: true //启用右滑关闭功能
@@ -189,10 +207,27 @@ swipeBack: true //启用右滑关闭功能
 				//轮播滚动
 				var slider=mui(".mui-slider");
 				slider.slider({
-					interval: 1000
+					interval: 0
 				});
+				
+</script>
+<!--滚动置顶-->
+<script type="text/javascript">  
+$(function () {    
+var ie6 = /msie 6/i.test(navigator.userAgent),
+dv = $('#charge_min'), st;
+dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离   
+$(window).scroll(function () {     
+	st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);     
+	if (st >= parseInt(dv.attr('otop'))) {        
+		if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果        
+			dv.css({ position: 'absolute', top: st });        
+		}                else if (dv.css('position') != 'fixed') dv.css({ 'position': 'fixed', top: 0 ,zIndex:40});     
+	} else if (dv.css('position') != 'static') dv.css({ 'position': 'static' });    
+});  
+});  
+</script>
 
-		</script>
 </body>
 
 </html>
